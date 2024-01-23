@@ -1,0 +1,21 @@
+body,html{
+  height: 100%;
+}
+.scroll::-webkit-scrollbar {
+  width:5px;
+  height: 3px;
+}
+.scroll::-webkit-scrollbar-track {
+  -webkit-box-shadow:inset 0 0 6px rgba(0,0,0,0.3); 
+  border-radius:5px;
+}
+.scroll::-webkit-scrollbar-thumb {
+  border-radius:5px;
+  -webkit-box-shadow: inset 0 0 6px #0d4cab; 
+}
+.transformChild,.transformParent{
+  transition: transform 5s;
+}
+.transformParent:hover .transformChild{
+  transform: translateX(10px);
+}
